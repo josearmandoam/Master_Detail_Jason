@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="122dp"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/margen_estandar"
+    android:layout_marginBottom="@dimen/margen_estandar"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/contenedor"
+            android:layout_width="245dp"
+            android:layout_height="match_parent"
+
+
+            >
+
+            <TextView
+                android:textColor="@android:color/background_dark"
+                android:text="Titulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView" />
+
+            <TextView
+                android:layout_marginEnd="5dp"
+                android:text="Resumen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_above="@+id/textView3" />
+
+            <TextView
+                android:layout_marginEnd="10dp"
+                android:textAlignment="textEnd"
+                android:textColor="@android:color/background_dark"
+                android:text="Fecha de estreno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:color/background_light"
+            android:id="@+id/imageView"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
